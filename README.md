@@ -1,32 +1,30 @@
 # etl-project
-ETL Group Project - Alcohol Consumption Data
+ETL Group Project - Alcohol Consumption and Life Expectancy by Country
+
+Andrew Miller, Taylor Sperry, Will Jung, Abdellah Hady, Emmanuel Obodoechine
 
 ## Finding Data
 Using 3 sources of data from Kaggle
-* [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who)
-* [Kaggle](https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consumption)
-* [Kaggle](https://www.kaggle.com/sansuthi/alcohol-consumption)
+* [Kaggle - Life Expectancy](https://www.kaggle.com/kumarajarshi/life-expectancy-who)
+* [Kaggle - Happiness Score](https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consumption)
+* [Kaggle - Suicide Rates](https://www.kaggle.com/sansuthi/alcohol-consumption)
 
 ## Data Cleanup & Analysis
 
 Perform ETL on the data. Plan and document the following:
 
-* The sources of data that you will extract from.
+* The sources of data that we extracted from were CSV files
 
-* The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
+* The type of transformation needed for this data was to clean the data by dropping/renaming columns, sort by year (2015), and merge the dataframes on the country
 
-* The type of final production database to load the data into (relational or non-relational).
+* The final production database is relational 
 
-* The final tables or collections that will be used in the production database.
-
-Submit a final technical report with the above information and steps required to reproduce your ETL process.
+* There's one final table after the merge that will be used in the production database
 
 ## Project Report
 
-Submit a Final Report that describes the following:
+* **E**xtract: your original data sources were CSV files that we downloaded from Kaggle
 
-* **E**xtract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
+* **T**ransform: clean, sort, merge
 
-* **T**ransform: what data cleaning or transformation was required.
-
-* **L**oad: the final database, tables/collections, and why this was chosen.
+* **L**oad: the final database into postgres  
